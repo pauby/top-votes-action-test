@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run top issues action
-        uses: pauby/top-votes-action
+        uses: pauby/top-votes-action@main
         env:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         with:
