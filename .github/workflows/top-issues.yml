@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '12 05 */1 * *'
 
+permissions:
+  issues: write
+  contents: read
+
 jobs:
   ShowTopIssues:
     name: Display top issues
