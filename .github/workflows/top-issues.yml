@@ -4,17 +4,13 @@ on:
   schedule:
     - cron: '12 05 */1 * *'
 
-permissions:
-  issues: write
-  contents: read
-
 jobs:
   ShowTopIssues:
     name: Display top issues
     runs-on: ubuntu-latest
     steps:
       - name: Run top issues action
-        uses: pauby/top-votes-action@main
+        uses: pauby/top-votes-action@v1
         env:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         with:
